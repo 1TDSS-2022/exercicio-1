@@ -26,9 +26,8 @@ if (A<B+C && B<A+C && C<A+B) {
 
 
 }else{
-
     console.log("não existe Triangulo")
     result.value="Não existe triangulo"
-}
+    }
 })
 
