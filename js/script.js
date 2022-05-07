@@ -31,3 +31,4 @@ if (A<B+C && B<A+C && C<A+B) {
     result.value="Não existe triangulo"
 }
 })
+
