@@ -1,6 +1,6 @@
 const triangulo = document.querySelector("#calcularTriangulo") // direciona o addEventListener ao Botao referente ao ID
 
-var resultado = document.getElementById("resultadoId")
+var result = document.getElementById("resultadoId")
 
 triangulo.addEventListener('click',function(){
 
@@ -13,14 +13,14 @@ console.log(A,B,C)
 if (A<B+C && B<A+C && C<A+B) {
     if(A==B && B==C){
         console.log("equilátero")
-        resultado.value="Equilátero"
+        result.value="Equilátero"
 
     }else if(A==B && B!=C|| A!=B && B==C|| A==C && C!=B){
         console.log("isoceles")
-        resultado.value="Isóceles"
+        result.value="Isóceles"
     }else{
         console.log("Escaleno")
-        resultado.value="Escaleno"
+        result.value="Escaleno"
     }
 
 
@@ -28,6 +28,6 @@ if (A<B+C && B<A+C && C<A+B) {
 }else{
 
     console.log("não existe Triangulo")
-    resultado.value="Não existe triangulo"
+    result.value="Não existe triangulo"
 }
 })
