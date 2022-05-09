@@ -2,6 +2,14 @@ const triangulo = document.querySelector("#calcularTriangulo") // direciona o ad
 
 var result = document.getElementById("resultadoId")
 
+
+const myForm = document.querySelector("#forms");
+
+myForm.addEventListener("submit",(e)=>{
+	e.preventDefault();
+})
+
+
 triangulo.addEventListener('click',function(){
 
 let A = document.getElementById("ladoAID").value
@@ -10,7 +18,7 @@ let C = document.getElementById("ladoCID").value
 
 console.log(A,B,C)
 
-if (A<B+C && B<A+C && C<A+B) {
+if (A>B+C || B>A+C || C>A+B) {
     if(A==B && B==C){
         console.log("equilátero")
         result.value="Equilátero"
