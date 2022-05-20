@@ -1,0 +1,10 @@
+fieldset{
+    max-width: 20%;
+}
+fieldset div{
+    
+    display: flex;
+}
+#button{
+    margin: auto;
+}
